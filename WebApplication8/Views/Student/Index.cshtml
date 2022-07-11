@@ -1,0 +1,30 @@
+﻿@model IEnumerable<WebApplication8.Models.Student>
+@{   Layout = "_Layout";
+
+}
+<h3> @ViewBag.message</h3>
+<table class=" table table-bordered table-hover ">
+    <tr>
+        <th> Roll no   </th>
+        <th> Name    </th>
+        <th> Fee  </th>
+        <th> Course   </th>
+
+    </tr>
+    @foreach (var stu in Model)
+            {
+<tr>
+    <td>@stu.RollNumber</td>
+    <td>@stu.Name</td>
+    <td>@stu.Fee</td>
+    <td>@stu.Course</td>
+
+
+
+</tr>
+            }
+</table>
+
+
+
+
